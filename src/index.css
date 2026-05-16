@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@400;500;700&display=swap');
+
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-body: "Montserrat", sans-serif;
+
+  --color-surface: #161309;
+  --color-surface-dim: #161309;
+  --color-surface-bright: #3c392c;
+  --color-surface-container-lowest: #100e05;
+  --color-surface-container-low: #1e1c10;
+  --color-surface-container: #222014;
+  --color-surface-container-high: #2d2a1e;
+  --color-surface-container-highest: #383528;
+  --color-on-surface: #e9e2d0;
+  --color-on-surface-variant: #dcc0bd;
+  
+  --color-primary: #ffb4aa;
+  --color-on-primary: #5f1410;
+  --color-primary-container: #4a0404;
+  --color-on-primary-container: #d26a5f;
+  
+  --color-secondary: #e9c349;
+  --color-on-secondary: #3c2f00;
+  --color-secondary-container: #af8d11;
+  
+  --color-glow-gold: #FFD700;
+  --color-muted-maroon: #2D0202;
+  --color-deep-void: #0A0000;
+
+  --spacing-margin-desktop: 80px;
+  --spacing-margin-mobile: 24px;
+  --spacing-section-gap: 160px;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body selection:bg-secondary/30 antialiased;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-primary-container/40 backdrop-blur-xl border-t border-secondary/30 shadow-2xl;
+  }
+  
+  .gold-glow:hover {
+    @apply shadow-[0_0_40px_rgba(212,175,55,0.2)];
+  }
+}
