@@ -125,8 +125,9 @@ const Hero = () => {
   const t = translations[lang].hero;
   return (
     <section id="home" className="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden bg-gradient-to-b from-muted-maroon to-surface">
-      <div className="absolute inset-0 opacity-40 z-0">
-        <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/banner/76e5ff41-33fc-478b-94b0-03c1dea3b926.png" alt="Futuristic globe" className="w-full h-full object-cover mix-blend-screen" referrerPolicy="no-referrer" />
+      <div className="absolute inset-0 z-0">
+        <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/banner/76e5ff41-33fc-478b-94b0-03c1dea3b926.png" alt="Futuristic globe" className="w-full h-full object-cover object-center" referrerPolicy="no-referrer" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
       </div>
       <div className="relative z-10 text-center px-6">
         <motion.span key={lang+"-badge"} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="font-body text-[10px] md:text-xs font-bold text-secondary tracking-[0.4em] mb-6 block uppercase">{t.badge}</motion.span>
