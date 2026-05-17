@@ -126,7 +126,7 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden bg-gradient-to-b from-muted-maroon to-surface">
       <div className="absolute inset-0 opacity-40 z-0">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHp99DE45eR6S5kZTuRRryBvbp5TQSShCLWmGF8IyDuTJQi0XBR_0fBWOB3mVxSvgntQBlxXZ5D1bfpKrWtuf5DSdbDqYdHR-m-XswxrFYFDrItA7rXUQB9-KsgUSgFOA9gNimaIEfzPM2bXsSdfPt_h7ixK7K_Bwm1Bjgdw19iXdvl8MskWlqm2LU_hTN0Mvsv3qHY4PK5sHigMKScCx_UtvNcw5Cum11s6V6d1bXw-o6g3v2jXNaVkqgjU-yOHvcBHFQRErq48g" alt="Futuristic globe" className="w-full h-full object-cover mix-blend-screen" referrerPolicy="no-referrer" />
+        <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/banner/76e5ff41-33fc-478b-94b0-03c1dea3b926.png" alt="Futuristic globe" className="w-full h-full object-cover mix-blend-screen" referrerPolicy="no-referrer" />
       </div>
       <div className="relative z-10 text-center px-6">
         <motion.span key={lang+"-badge"} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="font-body text-[10px] md:text-xs font-bold text-secondary tracking-[0.4em] mb-6 block uppercase">{t.badge}</motion.span>
